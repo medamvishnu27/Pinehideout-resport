@@ -1,0 +1,6 @@
+{
+  "name": "Pine Hideout",
+  "description": "Boutique highland retreat, mountain treks, and demo booking journey in pristine pine woodlands.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
