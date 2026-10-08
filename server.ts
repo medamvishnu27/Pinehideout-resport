@@ -605,6 +605,13 @@ CRITICAL ACCURACY & GROUND TRUTH RULES:
 async function startServer() {
   const isProd = process.env.NODE_ENV === 'production';
 
+  // Explicit static file serving for images across both dev and production
+  app.use('/assets/images', express.static(path.resolve('public/assets/images')));
+  app.use('/src/assets/images', express.static(path.resolve('public/src/assets/images')));
+  if (fs.existsSync(path.resolve('src/assets/images'))) {
+    app.use('/src/assets/images', express.static(path.resolve('src/assets/images')));
+  }
+
   if (!isProd) {
     const vite = await createViteServer({
       server: { middlewareMode: true },

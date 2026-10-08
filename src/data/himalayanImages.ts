@@ -7,6 +7,8 @@
  * Complies with strict attribution, region accuracy, and distinction between:
  * - 'destination': Real regional Himalayan landscape, valley, pine forest, and trekking photography
  * - 'illustrative-accommodation': Clearly labelled sample room interior concepts (not depicting real property)
+ * 
+ * Assets are served from /assets/images/ (backed by public/assets/images/ for production builds and live links).
  */
 
 export interface HimalayanImageRecord {
@@ -26,7 +28,7 @@ export interface HimalayanImageRecord {
 export const HIMALAYAN_IMAGE_CATALOG: Record<string, HimalayanImageRecord> = {
   heroVista: {
     id: 'heroVista',
-    src: '/src/assets/images/himalayan_hero_vista_1791185843738.jpg',
+    src: '/assets/images/himalayan_hero_vista_1791185843738.jpg',
     alt: 'Snow-capped peaks of the Western Himalayas rising above deep alpine deodar cedar and blue pine forests in morning mist',
     title: 'Himalayan Ridge & Pine Forest at Dawn',
     category: 'destination',
@@ -39,7 +41,7 @@ export const HIMALAYAN_IMAGE_CATALOG: Record<string, HimalayanImageRecord> = {
   },
   valleyTrek: {
     id: 'valleyTrek',
-    src: '/src/assets/images/himalayan_valley_trek_1791185860899.jpg',
+    src: '/assets/images/himalayan_valley_trek_1791185860899.jpg',
     alt: 'Trekking trail traversing a pine-forested ridge towards distant Himalayan summits under clear alpine sky',
     title: 'Dhauladhar & Pir Panjal Trail Corridor',
     category: 'destination',
@@ -52,7 +54,7 @@ export const HIMALAYAN_IMAGE_CATALOG: Record<string, HimalayanImageRecord> = {
   },
   forestStream: {
     id: 'forestStream',
-    src: '/src/assets/images/himalayan_forest_stream_1791185896098.jpg',
+    src: '/assets/images/himalayan_forest_stream_1791185896098.jpg',
     alt: 'Pristine mountain stream cascading over granite boulders through ancient Himalayan pine and cedar forest',
     title: 'Highland Pine Forest & Glacial Stream',
     category: 'destination',
@@ -65,7 +67,7 @@ export const HIMALAYAN_IMAGE_CATALOG: Record<string, HimalayanImageRecord> = {
   },
   villageRidge: {
     id: 'villageRidge',
-    src: '/src/assets/images/himalayan_village_ridge_1791185913242.jpg',
+    src: '/assets/images/himalayan_village_ridge_1791185913242.jpg',
     alt: 'Traditional stone-and-timber Himalayan mountain hamlet on terraced ridge surrounded by pine trees',
     title: 'Himalayan Terrace Village & Pine Ridge',
     category: 'destination',
@@ -78,7 +80,7 @@ export const HIMALAYAN_IMAGE_CATALOG: Record<string, HimalayanImageRecord> = {
   },
   roomPineView: {
     id: 'roomPineView',
-    src: '/src/assets/images/sample_room_pine_view_1791185934460.jpg',
+    src: '/assets/images/sample_room_pine_view_1791185934460.jpg',
     alt: 'Sample room interior with large timber windows framing pine boughs, wool blankets, and natural light',
     title: 'Pine View Room (Sample Category)',
     category: 'illustrative-accommodation',
@@ -91,7 +93,7 @@ export const HIMALAYAN_IMAGE_CATALOG: Record<string, HimalayanImageRecord> = {
   },
   roomMountainView: {
     id: 'roomMountainView',
-    src: '/src/assets/images/sample_room_mountain_view_1791185952418.jpg',
+    src: '/assets/images/sample_room_mountain_view_1791185952418.jpg',
     alt: 'Sample hotel room with timber flooring and panoramic glass view of snow-capped Himalayan mountains',
     title: 'Mountain View Room (Sample Category)',
     category: 'illustrative-accommodation',
@@ -104,7 +106,7 @@ export const HIMALAYAN_IMAGE_CATALOG: Record<string, HimalayanImageRecord> = {
   },
   roomLounge: {
     id: 'roomLounge',
-    src: '/src/assets/images/pine_lounge_hearth_1791184297240.jpg',
+    src: '/assets/images/pine_lounge_hearth_1791184297240.jpg',
     alt: 'Warm alpine living area with stone fireplace and floor-to-ceiling forest view',
     title: 'Sample Living Hearth (Family Room)',
     category: 'illustrative-accommodation',
@@ -116,7 +118,7 @@ export const HIMALAYAN_IMAGE_CATALOG: Record<string, HimalayanImageRecord> = {
   },
   trailVista: {
     id: 'trailVista',
-    src: '/src/assets/images/pine_trail_vista_1791184285874.jpg',
+    src: '/assets/images/pine_trail_vista_1791184285874.jpg',
     alt: 'Highland trail overlooking misty mountain ridges and autumn pine trees',
     title: 'Highland Ridge Vista',
     category: 'destination',
@@ -126,5 +128,29 @@ export const HIMALAYAN_IMAGE_CATALOG: Record<string, HimalayanImageRecord> = {
     license: 'Permitted Prototype Asset',
     caption: 'High-altitude ridgeline path in the Garhwal Himalayas. Illustrative trekking inspiration.',
     aspectRatio: '4/3',
+  },
+  cabinExterior: {
+    id: 'cabinExterior',
+    src: '/assets/images/pine_cabin_exterior_1791184274744.jpg',
+    alt: 'Timber retreat exterior nestled in Himalayan pine woods',
+    title: 'Pine Sanctuary Concept',
+    category: 'illustrative-accommodation',
+    region: 'Prototype Exterior Concept',
+    attribution: 'Highland Retreat Design Archive',
+    license: 'Prototype Exterior Reference',
+    caption: 'Illustrative architectural rendering of a mountain retreat building. Prototype demonstration.',
+    aspectRatio: '16/9',
+  },
+  hideoutHero: {
+    id: 'hideoutHero',
+    src: '/assets/images/pine_hideout_hero_1791184261346.jpg',
+    alt: 'Elevated view of pine canopy and Himalayan ridge at sunrise',
+    title: 'Highland Forest Canopy',
+    category: 'destination',
+    region: 'Himachal Pradesh, India',
+    attribution: 'Himalayan Ridge Photography Collection',
+    license: 'Permitted Prototype Asset',
+    caption: 'Pristine Himalayan forest canopy at sunrise. Regional landscape photograph.',
+    aspectRatio: '16/9',
   },
 };
